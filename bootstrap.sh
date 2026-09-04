@@ -9,6 +9,8 @@ mkdir -p /runpod-volume/vibevoice/{models,output,demo/voices,torch_cache,hf_home
 
 # Set environment variables for Torch cache
 export TORCH_HOME="/runpod-volume/vibevoice/torch_cache"
+export HF_HOME="/runpod-volume/vibevoice/hf_home"
+export HF_HUB_CACHE="/runpod-volume/vibevoice/hf_cache"
 
 # NOTE: We do NOT set HF_HOME or HF_HUB_CACHE here to allow RunPod's smart caching to work.
 # RunPod automatically mounts cached HuggingFace models when using default paths.
