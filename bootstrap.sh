@@ -71,8 +71,8 @@ from huggingface_hub import snapshot_download
 import os
 
 cache_dir = os.environ.get('HF_HUB_CACHE')
-print(f'Downloading model to {cache_dir or "default HF cache"}...')
-kwargs = {"cache_dir": cache_dir} if cache_dir else {}
+print(f'Downloading model to {cache_dir or \"default HF cache\"}...')
+kwargs = {'cache_dir': cache_dir} if cache_dir else {}
 snapshot_download('vibevoice/VibeVoice-7B', **kwargs)
 print('Model download complete')
 "
